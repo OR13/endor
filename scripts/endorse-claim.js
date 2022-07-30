@@ -1,7 +1,8 @@
 const fs = require("fs");
-const crypto = require("crypto");
+
 const { v4: uuidv4 } = require("uuid");
-const did = require("@transmute/did-key.js");
+// const did = require("@transmute/did-key.js");
+// const crypto = require("crypto");
 const { verifiable } = require("@transmute/vc.js");
 const {
   JsonWebSignature,
@@ -9,6 +10,9 @@ const {
 } = require("@transmute/json-web-signature");
 const endor = require("../src");
 
+// normally you would pull this from environment secrets
+// or use a github action with a github secret for the endorsement signin key.
+// for demonstration purposes we just hard code the private key here.
 const getEndorsement = async (endorsementObject) => {
   // const { keys } = await did.ed25519.generate({
   //   secureRandom: () => {
@@ -77,7 +81,7 @@ const getEndorsement = async (endorsementObject) => {
   try {
     const decodedClaim = endor.decodeJwt(claim.jwt);
     claimObject = {
-      id: claimId,
+      id: `https://or13.github.io/endor/claims/${claimId}.json`,
       issuer: decodedClaim.payload.iss,
       verify: "https://api.did.actor/v/" + claim.jwt,
       decoded: decodedClaim,
@@ -97,9 +101,9 @@ const getEndorsement = async (endorsementObject) => {
   try {
     const endorsementId = `urn:uuid:${uuidv4()}`;
     let endorsementObject = {
-      id: endorsementId,
+      id: `https://or13.github.io/endor/endorsements/${endorsementId}.json`,
       issuer: claimObject.issuer,
-      claim: claimObject.id,
+      claim: `https://or13.github.io/endor/claims/${claimObject.id}.json`,
     };
     const endorsementVcJwt = await getEndorsement(endorsementObject);
     const decodedEndorsement = endor.decodeJwt(endorsementVcJwt);
