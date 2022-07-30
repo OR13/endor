@@ -1,0 +1,33 @@
+{
+  "id": "urn:uuid:849a1883-9e88-4bf5-bb44-9d83d493d156",
+  "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+  "claim": "urn:uuid:4fbc928c-863a-4875-81b1-51e2f1d4bc13",
+  "encoded": "eyJhbGciOiJFZERTQSIsImtpZCI6ImRpZDprZXk6ejZNa21lMXFxb1pVdWE5S29XSEtxQndVQ2ZpV1lMb0pQM0tKUTNlcGRnNTZuV3VwI3o2TWttZTFxcW9aVXVhOUtvV0hLcUJ3VUNmaVdZTG9KUDNLSlEzZXBkZzU2bld1cCJ9.eyJpc3MiOiJkaWQ6a2V5Ono2TWttZTFxcW9aVXVhOUtvV0hLcUJ3VUNmaVdZTG9KUDNLSlEzZXBkZzU2bld1cCIsInN1YiI6InVybjp1dWlkOjRmYmM5MjhjLTg2M2EtNDg3NS04MWIxLTUxZTJmMWQ0YmMxMyIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly93M2lkLm9yZy9zZWN1cml0eS9zdWl0ZXMvandzLTIwMjAvdjEiXSwiaWQiOiJ1cm46dXVpZDo4NDlhMTg4My05ZTg4LTRiZjUtYmI0NC05ZDgzZDQ5M2QxNTYiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImlzc3VlciI6ImRpZDprZXk6ejZNa21lMXFxb1pVdWE5S29XSEtxQndVQ2ZpV1lMb0pQM0tKUTNlcGRnNTZuV3VwIiwiaXNzdWFuY2VEYXRlIjoiMjAyMi0wNy0zMFQxODozNTowOS40OTRaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJ1cm46dXVpZDo0ZmJjOTI4Yy04NjNhLTQ4NzUtODFiMS01MWUyZjFkNGJjMTMifX0sImp0aSI6InVybjp1dWlkOjg0OWExODgzLTllODgtNGJmNS1iYjQ0LTlkODNkNDkzZDE1NiIsIm5iZiI6MTY1OTIwNjEwOX0.lq7ZK17EsVX0PzjdU13MgSnXMu2Xi-0p7XFuKiPlKHTVIvX0becemuTXbaf1A65KNq-Qy5HQpwrLxHKpW2CSBA",
+  "decoded": {
+    "header": {
+      "alg": "EdDSA",
+      "kid": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup#z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup"
+    },
+    "payload": {
+      "iss": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup",
+      "sub": "urn:uuid:4fbc928c-863a-4875-81b1-51e2f1d4bc13",
+      "vc": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1"
+        ],
+        "id": "urn:uuid:849a1883-9e88-4bf5-bb44-9d83d493d156",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup",
+        "issuanceDate": "2022-07-30T18:35:09.494Z",
+        "credentialSubject": {
+          "id": "urn:uuid:4fbc928c-863a-4875-81b1-51e2f1d4bc13"
+        }
+      },
+      "jti": "urn:uuid:849a1883-9e88-4bf5-bb44-9d83d493d156",
+      "nbf": 1659206109
+    }
+  }
+}
