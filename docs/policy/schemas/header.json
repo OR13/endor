@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "kid": { "type": "string" },
+    "alg": { "type": "string" }
+  },
+  "required": ["kid", "alg"],
+  "additionalProperties": false
+}

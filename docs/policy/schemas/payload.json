@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "vc": { "type": "object", "additionalProperties": true },
+    "iss": { "type": "string" },
+    "sub": { "type": "string" },
+    "jti": { "type": "string" },
+    "nbf": { "type": "integer" }
+  },
+  "required": ["vc", "iss", "nbf"],
+  "additionalProperties": false
+}
