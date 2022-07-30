@@ -20,6 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run claim:endorse
+      - run: npm run registry:update
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: ✨ endorsement
