@@ -15,7 +15,7 @@ For demonstration purposes only.
 - [policy](https://or13.github.io/endor/policy)
 - [endorsements](https://or13.github.io/endor/endorsements)
 
-### Introduction
+## Introduction
 
 Learn more by visiting [ietf-scitt](https://github.com/ietf-scitt).
 
@@ -37,17 +37,17 @@ While this makes it easier to explore the concepts it does not reflect a realist
 
 Generalizing from the proposed architecture, we have:
 
-#### Issuers
+### Issuers
 
 Entities such as people, organizations or devices that make statements about an artifact or subject.
 
-#### Claims
+### Claims
 
 A set of statements about a subject protected by a signature from an issuer.
 
 🧸 In this PoC I have chosen to represent claims as W3C Verifiable Credentials.
 
-#### Policy Documents
+### Policy Documents
 
 Security documents describing the rules for validating a claim for consideration in the registry.
 
@@ -58,12 +58,12 @@ such that a review of claims for conformance is automatically created after a pu
 
 See [https://github.com/OR13/endor/actions/workflows/Review.yml](https://github.com/OR13/endor/actions/workflows/Review.yml).
 
-#### Notary
+### Notary
 
 Entities such as people, organizations or devices that have some trust relationship with an issuer,
 and can provide some assurance to the issuer's identifiers and authenticity.
 
-#### Endorsements
+### Endorsements
 
 A counter signature for a claim from a notary, representing that the issuer has been authenticated under some assurance level,
 but not representing any evaluation of the payload or claims made by the issuer about a subject.
@@ -75,7 +75,7 @@ such that endorsements are automatically created after a pull request to the `ma
 
 See [https://github.com/OR13/endor/actions/workflows/Endorse.yml](https://github.com/OR13/endor/actions/workflows/Endorse.yml).
 
-#### Try it out!
+# Try it out!
 
 Fork the repo, and [use this tool](https://api.did.actor/issue) to create a `/docs/inbox/claim.json` file.
 
