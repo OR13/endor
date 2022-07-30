@@ -1,0 +1,23 @@
+{
+  "name": "endor",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Credential Endorsement PoC inspired by SCITT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OR13/endor.git"
+  },
+  "author": "Orie Steele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OR13/endor/issues"
+  },
+  "homepage": "https://github.com/OR13/endor#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
