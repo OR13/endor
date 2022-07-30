@@ -4,7 +4,9 @@
 
 [![Claim Review](https://github.com/OR13/endor/actions/workflows/Review.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Review.yml)
 
-Credential Endorsement PoC inspired by SCITT.
+> Credential Endorsement PoC inspired by SCITT.
+
+<img src="./image.jpg" alt="endor protecting the death star"/>
 
 For demonstration purposes only.
 
