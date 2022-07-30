@@ -68,7 +68,7 @@ const buildClaims = () => {
     });
   const index = {
     items: onlyClaims.map((f) => {
-      return "https://or13.github.io/endor/claims/" + f.json.id + ".json";
+      return f.json.id;
     }),
   };
   fs.writeFileSync(`./docs/claims/index.json`, JSON.stringify(index, null, 2));
@@ -86,7 +86,7 @@ const buildEndorsements = () => {
     });
   const index = {
     items: onlyClaims.map((f) => {
-      return "https://or13.github.io/endor/endorsements/" + f.json.id + ".json";
+      return f.json.id;
     }),
   };
   fs.writeFileSync(
