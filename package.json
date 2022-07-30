@@ -5,7 +5,8 @@
   "description": "Credential Endorsement PoC inspired by SCITT.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "shove": "git add -A; git commit -m ':rocket:'; git push origin main"
   },
   "repository": {
     "type": "git",
