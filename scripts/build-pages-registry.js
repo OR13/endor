@@ -96,10 +96,29 @@ const buildEndorsements = () => {
   console.log("🌱 Endorsements registry updated.");
 };
 
+const buildSchemas = () => {
+  const files = readFilesSync("./docs/policy/schemas");
+  const onlyClaims = files
+    .filter((f) => {
+      return !f.name.includes("index");
+    })
+    .map((f) => {
+      return { ...f, json: JSON.parse(f.content) };
+    });
+  const index = {
+    items: onlyClaims.map((f) => {
+      return "https://or13.github.io/endor/policy/schemas/" + f.name + ".json";
+    }),
+  };
+  fs.writeFileSync(`./docs/policy/index.json`, JSON.stringify(index, null, 2));
+  console.log("🌱 Policy registry updated.");
+};
+
 (async () => {
   console.log("🧙‍♂️ Building Registry...");
   buildIssuers();
   buildClaims();
   buildEndorsements();
+  buildSchemas();
   process.exit(0);
 })();
