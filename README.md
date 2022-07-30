@@ -1,7 +1,5 @@
 # Endor
 
-[![CI](https://github.com/OR13/endor/actions/workflows/CI.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/CI.yml)
-
 [![Claim Reviewed](https://github.com/OR13/endor/actions/workflows/Review.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Review.yml)
 
 [![Claim Endorsed](https://github.com/OR13/endor/actions/workflows/Endorse.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Endorse.yml)
@@ -104,9 +102,11 @@ Then paste this:
 }
 ```
 
-You can experiment with using other issuer's by changing the mnemonic and/or path values.
+You can experiment with using other issuer identifiers by changing the mnemonic and/or path values.
 
-Once you have the single file in a branch under your pull request, open a PR against this repository.
+Once you have the `/docs/inbox/claim.json` file in a branch, open a pull request against this repository.
+
+You should have only this file in the change set.
 
 A reviewer (@OR13b) will have to approve and run CI to validate your claim.
 
