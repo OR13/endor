@@ -1,0 +1,33 @@
+{
+  "id": "https://or13.github.io/endor/endorsements/urn:uuid:7463ee4e-5a07-4739-ba5f-0822421503db.json",
+  "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+  "claim": "https://or13.github.io/endor/claims/urn:uuid:9e82aacf-128f-4470-9af8-72b4e8846f34.json",
+  "verify": "https://api.did.actor/v/eyJhbGciOiJFZERTQSIsImtpZCI6ImRpZDprZXk6ejZNa21lMXFxb1pVdWE5S29XSEtxQndVQ2ZpV1lMb0pQM0tKUTNlcGRnNTZuV3VwI3o2TWttZTFxcW9aVXVhOUtvV0hLcUJ3VUNmaVdZTG9KUDNLSlEzZXBkZzU2bld1cCJ9.eyJpc3MiOiJkaWQ6a2V5Ono2TWttZTFxcW9aVXVhOUtvV0hLcUJ3VUNmaVdZTG9KUDNLSlEzZXBkZzU2bld1cCIsInN1YiI6Imh0dHBzOi8vb3IxMy5naXRodWIuaW8vZW5kb3IvY2xhaW1zL3Vybjp1dWlkOjllODJhYWNmLTEyOGYtNDQ3MC05YWY4LTcyYjRlODg0NmYzNC5qc29uIiwidmMiOnsiQGNvbnRleHQiOlsiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvdjEiLCJodHRwczovL3czaWQub3JnL3NlY3VyaXR5L3N1aXRlcy9qd3MtMjAyMC92MSJdLCJpZCI6Imh0dHBzOi8vb3IxMy5naXRodWIuaW8vZW5kb3IvZW5kb3JzZW1lbnRzL3Vybjp1dWlkOjc0NjNlZTRlLTVhMDctNDczOS1iYTVmLTA4MjI0MjE1MDNkYi5qc29uIiwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJkaWQ6a2V5Ono2TWttZTFxcW9aVXVhOUtvV0hLcUJ3VUNmaVdZTG9KUDNLSlEzZXBkZzU2bld1cCIsImlzc3VhbmNlRGF0ZSI6IjIwMjItMDctMzBUMjA6NDQ6MTMuMjA3WiIsImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImlkIjoiaHR0cHM6Ly9vcjEzLmdpdGh1Yi5pby9lbmRvci9jbGFpbXMvdXJuOnV1aWQ6OWU4MmFhY2YtMTI4Zi00NDcwLTlhZjgtNzJiNGU4ODQ2ZjM0Lmpzb24ifX0sImp0aSI6Imh0dHBzOi8vb3IxMy5naXRodWIuaW8vZW5kb3IvZW5kb3JzZW1lbnRzL3Vybjp1dWlkOjc0NjNlZTRlLTVhMDctNDczOS1iYTVmLTA4MjI0MjE1MDNkYi5qc29uIiwibmJmIjoxNjU5MjEzODUzfQ.LY7Li88eIZdr5c5zOcC_l6mv3rFhuAdHvIDjclziUPPmEGuORuhX287ZeyS2AHygurB73r4oME_vIlrnCoraCg",
+  "decoded": {
+    "header": {
+      "alg": "EdDSA",
+      "kid": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup#z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup"
+    },
+    "payload": {
+      "iss": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup",
+      "sub": "https://or13.github.io/endor/claims/urn:uuid:9e82aacf-128f-4470-9af8-72b4e8846f34.json",
+      "vc": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1"
+        ],
+        "id": "https://or13.github.io/endor/endorsements/urn:uuid:7463ee4e-5a07-4739-ba5f-0822421503db.json",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:z6Mkme1qqoZUua9KoWHKqBwUCfiWYLoJP3KJQ3epdg56nWup",
+        "issuanceDate": "2022-07-30T20:44:13.207Z",
+        "credentialSubject": {
+          "id": "https://or13.github.io/endor/claims/urn:uuid:9e82aacf-128f-4470-9af8-72b4e8846f34.json"
+        }
+      },
+      "jti": "https://or13.github.io/endor/endorsements/urn:uuid:7463ee4e-5a07-4739-ba5f-0822421503db.json",
+      "nbf": 1659213853
+    }
+  }
+}
