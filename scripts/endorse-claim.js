@@ -103,7 +103,7 @@ const getEndorsement = async (endorsementObject) => {
     let endorsementObject = {
       id: `https://or13.github.io/endor/endorsements/${endorsementId}.json`,
       issuer: claimObject.issuer,
-      claim: `https://or13.github.io/endor/claims/${claimObject.id}.json`,
+      claim: claimObject.id,
     };
     const endorsementVcJwt = await getEndorsement(endorsementObject);
     const decodedEndorsement = endor.decodeJwt(endorsementVcJwt);
