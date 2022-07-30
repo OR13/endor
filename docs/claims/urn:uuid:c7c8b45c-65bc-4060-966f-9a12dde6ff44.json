@@ -1,0 +1,31 @@
+{
+  "id": "https://or13.github.io/endor/claims/urn:uuid:c7c8b45c-65bc-4060-966f-9a12dde6ff44.json",
+  "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+  "verify": "https://api.did.actor/v/eyJhbGciOiJFUzI1NksiLCJraWQiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwjelEzc2hybkNacTNSN3ZMdkRlV1FGbnh6NUhNS3FQOUpvaU1vbnpZSkI0VEdZbmZ0TCJ9.eyJpc3MiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwiLCJzdWIiOiJkaWQ6ZXhhbXBsZToxMjMiLCJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJpZCI6InVybjp1dWlkOmM3OWJiNTNlLTRkMzMtNDk5Yy05MWJkLWM2OTM5OGM2MzY0ZSIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmtleTp6UTNzaHJuQ1pxM1I3dkx2RGVXUUZueHo1SE1LcVA5Sm9pTW9uellKQjRUR1luZnRMIiwiaXNzdWFuY2VEYXRlIjoiMjAxMC0wMS0wMVQxOToyMzoyNFoiLCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6ImRpZDpleGFtcGxlOjEyMyJ9fSwianRpIjoidXJuOnV1aWQ6Yzc5YmI1M2UtNGQzMy00OTljLTkxYmQtYzY5Mzk4YzYzNjRlIiwibmJmIjoxMjYyMzczODA0fQ.nKs43-qAEV-zDKK8Fz2NF5Dk71q6fRDYahTPYMpYdQN_Asz_t8Z2Q_IrrsxFPJw3VaJVsoG5XrgqjVPr7M89cA",
+  "decoded": {
+    "header": {
+      "alg": "ES256K",
+      "kid": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL#zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL"
+    },
+    "payload": {
+      "iss": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+      "sub": "did:example:123",
+      "vc": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1"
+        ],
+        "id": "urn:uuid:c79bb53e-4d33-499c-91bd-c69398c6364e",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+        "issuanceDate": "2010-01-01T19:23:24Z",
+        "credentialSubject": {
+          "id": "did:example:123"
+        }
+      },
+      "jti": "urn:uuid:c79bb53e-4d33-499c-91bd-c69398c6364e",
+      "nbf": 1262373804
+    }
+  }
+}
