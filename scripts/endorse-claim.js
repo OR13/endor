@@ -79,7 +79,7 @@ const getEndorsement = async (endorsementObject) => {
     claimObject = {
       id: claimId,
       issuer: decodedClaim.payload.iss,
-      encoded: claim.jwt,
+      verify: "https://api.did.actor/v/" + claim.jwt,
       decoded: decodedClaim,
     };
 
@@ -103,8 +103,9 @@ const getEndorsement = async (endorsementObject) => {
     };
     const endorsementVcJwt = await getEndorsement(endorsementObject);
     const decodedEndorsement = endor.decodeJwt(endorsementVcJwt);
-    endorsementObject.encoded = endorsementVcJwt;
+    endorsementObject.verify = "https://api.did.actor/v/" + endorsementVcJwt;
     endorsementObject.decoded = decodedEndorsement;
+
     fs.writeFileSync(
       `./docs/endorsements/${endorsementId}.json`,
       JSON.stringify(endorsementObject, null, 2)
