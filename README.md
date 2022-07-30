@@ -39,11 +39,13 @@ Generalizing from the proposed architecture, we have:
 
 Entities such as people, organizations or devices that make statements about an artifact or subject.
 
+🧸 In this PoC I have chosen to represent issuers using W3C Decentralized Identifiers.
+
 ### Claims
 
 A set of statements about a subject protected by a signature from an issuer.
 
-🧸 In this PoC I have chosen to represent claims as W3C Verifiable Credentials.
+🧸 In this PoC I have chosen to represent claims using W3C Verifiable Credentials.
 
 ### Policy Documents
 
@@ -61,12 +63,16 @@ See [https://github.com/OR13/endor/actions/workflows/Review.yml](https://github.
 Entities such as people, organizations or devices that have some trust relationship with an issuer,
 and can provide some assurance to the issuer's identifiers and authenticity.
 
+A notary keeps a ledger or registry of their endorsements.
+
+🧸 In this PoC I have chosen to represent the transparent registry using a GitHub repository.
+
 ### Endorsements
 
 A counter signature for a claim from a notary, representing that the issuer has been authenticated under some assurance level,
 but not representing any evaluation of the payload or claims made by the issuer about a subject.
 
-🧸 In this PoC I have chosen to represent these as W3C Verifiable Credentials.
+🧸 In this PoC I have chosen to represent endorsements using W3C Verifiable Credentials.
 
 🧸 In this PoC I have chosen to automate the process of creating endorsements by leveraging GitHub Worflows,
 such that endorsements are automatically created after a pull request to the `main` branch has been merged.
@@ -102,13 +108,19 @@ Then paste this:
 
 You can experiment with using other issuer identifiers by changing the mnemonic and/or path values.
 
+Just beware that the `@context` needs to match teh above example or you may fail to issue verifiable credentials.
+
 Once you have the `/docs/inbox/claim.json` file in a branch, open a pull request against this repository.
 
 You should have only this file in the change set.
 
 A reviewer (@OR13b) will have to approve and run CI to validate your claim.
 
-If the review passes, I will merge your pull request, and when the registry update finishes you should have a link for an endorsement.
+If the review passes:
+
+- I will merge your pull request
+- The registry will automatically update
+- A link for your endorsed claim will appear [here](https://or13.github.io/endor/endorsements/index.json)
 
 If you want to test out the process see the npm commands under usage below.
 
@@ -156,4 +168,6 @@ This repository contains private keys for demonstration purposes.
 
 This repository uses `did:key` which has no revocation or expiration mechanism... for demonstration purposes only.
 
-This entire PoC is a hypothetical example, is not safe, I made it to explore ideas.
+This PoC is a hypothetical example.
+
+This PoC is not safe, I made it to explore ideas.
