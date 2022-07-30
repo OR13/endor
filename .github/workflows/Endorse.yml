@@ -1,7 +1,7 @@
-name: Claim Reviewed
+name: Claim Endorsed
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
@@ -19,4 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm run claim:review
+      - run: npm run claim:endorse
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: ✨ endorsement

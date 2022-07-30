@@ -2,6 +2,8 @@ const fs = require("fs");
 const jose = require("jose");
 const did = require("@transmute/did-key.js");
 const Ajv = require("ajv");
+const endor = require("../src");
+
 const ajv = new Ajv();
 
 const schemas = {
@@ -11,9 +13,7 @@ const schemas = {
 };
 
 const verify = async (jws) => {
-  const components = jws.split(".");
-  const header = JSON.parse(Buffer.from(components[0], "base64").toString());
-  const payload = JSON.parse(Buffer.from(components[1], "base64").toString());
+  const { header, payload } = endor.decodeJwt(jws);
 
   if (!header.kid.startsWith(payload.iss)) {
     throw new Error("Issuer does not control signing key.");

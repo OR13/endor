@@ -7,7 +7,12 @@
   "scripts": {
     "test": "jest",
     "shove": "git add -A; git commit -m ':rocket:'; git push origin main",
-    "review:claim": "node ./scripts/review-claim.js"
+    "claim:prepare": "cp ./docs/inbox/example.json ./docs/inbox/claim.json",
+    "claim:review": "node ./scripts/review-claim.js",
+    "claim:endorse": "node ./scripts/endorse-claim.js",
+    "drop-all-claims": "rm ./docs/claims/urn:uuid:*",
+    "drop-all-endorsements": "rm ./docs/endorsements/urn:uuid:*",
+    "registry:drop": "npm run drop-all-claims && npm run drop-all-endorsements"
   },
   "repository": {
     "type": "git",
@@ -21,8 +26,11 @@
   "homepage": "https://github.com/OR13/endor#readme",
   "devDependencies": {
     "@transmute/did-key.js": "^0.3.0-unstable.8",
+    "@transmute/json-web-signature": "^0.7.0-unstable.64",
+    "@transmute/vc.js": "^0.7.0-unstable.64",
     "ajv": "^8.11.0",
     "jest": "^28.1.3",
-    "jose": "^4.8.3"
+    "jose": "^4.8.3",
+    "uuid": "^8.3.2"
   }
 }
