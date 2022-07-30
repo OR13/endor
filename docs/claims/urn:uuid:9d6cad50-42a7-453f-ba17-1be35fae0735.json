@@ -1,0 +1,37 @@
+{
+  "id": "https://or13.github.io/endor/claims/urn:uuid:9d6cad50-42a7-453f-ba17-1be35fae0735.json",
+  "issuer": "did:key:zQ3shsqFx1jtPKAXutvL7Bm1XhzrY2NB8DgY7jYMwDzdMBHUk",
+  "verify": "https://api.did.actor/v/eyJhbGciOiJFUzI1NksiLCJraWQiOiJkaWQ6a2V5OnpRM3Noc3FGeDFqdFBLQVh1dHZMN0JtMVhoenJZMk5COERnWTdqWU13RHpkTUJIVWsjelEzc2hzcUZ4MWp0UEtBWHV0dkw3Qm0xWGh6clkyTkI4RGdZN2pZTXdEemRNQkhVayJ9.eyJpc3MiOiJkaWQ6a2V5OnpRM3Noc3FGeDFqdFBLQVh1dHZMN0JtMVhoenJZMk5COERnWTdqWU13RHpkTUJIVWsiLCJzdWIiOiJkaWQ6ZXhhbXBsZToxMjMiLCJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIseyJAdm9jYWIiOiJodHRwczovL29yMTMuZ2l0aHViLmlvL2VuZG9yIyJ9LCJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJpZCI6InVybjp1dWlkOmE4NmY4YzgzLWZlMDAtNGFmZi04M2I3LWY2ZTU1YzRlYmYyMCIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmtleTp6UTNzaHNxRngxanRQS0FYdXR2TDdCbTFYaHpyWTJOQjhEZ1k3allNd0R6ZE1CSFVrIiwiaXNzdWFuY2VEYXRlIjoiMjAxMC0wMS0wMVQxOToyMzoyNFoiLCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6ImRpZDpleGFtcGxlOjEyMyIsInR5cGUiOiJEZXZpY2UiLCJpcCI6IjEyNi4yMjkuOC4yMDUifX0sImp0aSI6InVybjp1dWlkOmE4NmY4YzgzLWZlMDAtNGFmZi04M2I3LWY2ZTU1YzRlYmYyMCIsIm5iZiI6MTI2MjM3MzgwNH0.8zqANXYiRqcnywc_oxyIgt3M_sUJZfk1p2ye5A-1j4FaopbPdVP1269j6p8_cFofUpf7rh5FXD0VJxthKfIPig",
+  "decoded": {
+    "header": {
+      "alg": "ES256K",
+      "kid": "did:key:zQ3shsqFx1jtPKAXutvL7Bm1XhzrY2NB8DgY7jYMwDzdMBHUk#zQ3shsqFx1jtPKAXutvL7Bm1XhzrY2NB8DgY7jYMwDzdMBHUk"
+    },
+    "payload": {
+      "iss": "did:key:zQ3shsqFx1jtPKAXutvL7Bm1XhzrY2NB8DgY7jYMwDzdMBHUk",
+      "sub": "did:example:123",
+      "vc": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          {
+            "@vocab": "https://or13.github.io/endor#"
+          },
+          "https://www.w3.org/2018/credentials/v1"
+        ],
+        "id": "urn:uuid:a86f8c83-fe00-4aff-83b7-f6e55c4ebf20",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:zQ3shsqFx1jtPKAXutvL7Bm1XhzrY2NB8DgY7jYMwDzdMBHUk",
+        "issuanceDate": "2010-01-01T19:23:24Z",
+        "credentialSubject": {
+          "id": "did:example:123",
+          "type": "Device",
+          "ip": "126.229.8.205"
+        }
+      },
+      "jti": "urn:uuid:a86f8c83-fe00-4aff-83b7-f6e55c4ebf20",
+      "nbf": 1262373804
+    }
+  }
+}
