@@ -1,8 +1,6 @@
 # Endor
 
-[![Claim Reviewed](https://github.com/OR13/endor/actions/workflows/Review.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Review.yml)
-
-[![Claim Endorsed](https://github.com/OR13/endor/actions/workflows/Endorse.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Endorse.yml)
+[![Claim Reviewed](https://github.com/OR13/endor/actions/workflows/Review.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Review.yml) [![Claim Endorsed](https://github.com/OR13/endor/actions/workflows/Endorse.yml/badge.svg)](https://github.com/OR13/endor/actions/workflows/Endorse.yml)
 
 > Verifiable Credential Endorsement PoC inspired by SCITT.
 
