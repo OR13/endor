@@ -27,13 +27,11 @@ In particular, this repository focuses on issuers that rely on DIDs and Payloads
 These choices were made to leverage some existing visualization tooling,
 and libraries, but a similar setup can be achieved with x509 and COSE.
 
-This repository uses a GitHub as a "Transparency Ledger" and provides "Full Transparency", meaning both claims and endorsements are public.
+This repository uses a GitHub Repository as a "Transparent Registry" and provides "Full Transparency", meaning both claims and endorsements are public.
 
 While this makes it easier to explore the concepts it does not reflect a realistic security architecture.
 
 🚧 This repository is for experimenting / and not reflective of anything approaching the proposed SCITT architecture.
-
-Generalizing from the proposed architecture, we have:
 
 ### Issuers
 
