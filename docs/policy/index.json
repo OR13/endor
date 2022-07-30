@@ -1,0 +1,7 @@
+{
+  "items": [
+    "https://or13.github.io/endor/policy/schemas/header.json",
+    "https://or13.github.io/endor/policy/schemas/payload.json",
+    "https://or13.github.io/endor/policy/schemas/VerifiableCredential.json"
+  ]
+}
