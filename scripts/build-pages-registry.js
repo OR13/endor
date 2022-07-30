@@ -39,6 +39,24 @@ const readFilesSync = (dir) => {
   return files;
 };
 
+const buildIssuers = () => {
+  const files = readFilesSync("./docs/claims");
+  const onlyClaims = files
+    .filter((f) => {
+      return f.name.includes("urn:uuid");
+    })
+    .map((f) => {
+      return { ...f, json: JSON.parse(f.content) };
+    });
+  const index = {
+    items: onlyClaims.map((f) => {
+      return "https://api.did.actor/" + f.json.issuer;
+    }),
+  };
+  fs.writeFileSync(`./docs/issuers/index.json`, JSON.stringify(index, null, 2));
+  console.log("🌱 Issuer registry updated.");
+};
+
 const buildClaims = () => {
   const files = readFilesSync("./docs/claims");
   const onlyClaims = files
@@ -79,7 +97,8 @@ const buildEndorsements = () => {
 };
 
 (async () => {
-  console.log("🧙‍♂️ Building pages registry...");
+  console.log("🧙‍♂️ Building Registry...");
+  buildIssuers();
   buildClaims();
   buildEndorsements();
   process.exit(0);

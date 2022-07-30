@@ -12,7 +12,7 @@
     "claim:endorse": "node ./scripts/endorse-claim.js",
     "drop-all-claims": "rm ./docs/claims/urn:uuid:*",
     "drop-all-endorsements": "rm ./docs/endorsements/urn:uuid:*",
-    "registry:test": "npm run claim:prepare && npm run claim:review && npm run claim:endorse",
+    "registry:test": "npm run registry:drop; npm run claim:prepare && npm run claim:review && npm run claim:endorse && npm run registry:update",
     "registry:update": "node ./scripts/build-pages-registry.js",
     "registry:drop": "npm run drop-all-claims && npm run drop-all-endorsements"
   },
