@@ -108,6 +108,10 @@ You can experiment with using other issuer identifiers by changing the mnemonic 
 
 Just beware that the `@context` needs to match teh above example or you may fail to issue verifiable credentials.
 
+You will need to click the pencil to issue the credential as a JWT.
+
+You will need to use that JWT to create the `claim.json` file, and it should look like the `example.json` file, next to it. 
+
 Once you have the `/docs/inbox/claim.json` file in a branch, open a pull request against this repository.
 
 You should have only this file in the change set.
@@ -129,6 +133,22 @@ If you want to test out the process see the npm commands under usage below.
 ```
 npm run claim:prepare
 ```
+
+This command will create a `./docs/inbox/claim.json` from `./docs/inbox/example.json`.
+
+You can also generate your own unique claim using this tool:
+
+[api.did.actor/issue](https://api.did.actor/issue)
+
+<img src="./issue-jwt-example.png" alt="issue jwt verifiable credential example"/>
+
+After configuring the credential, click the "pencil" to issue it.
+
+You will end on a URL that looks like this: [https://api.did.actor/v/eyJhbGc...](https://api.did.actor/v/eyJhbGciOiJFUzI1NksiLCJraWQiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwjelEzc2hybkNacTNSN3ZMdkRlV1FGbnh6NUhNS3FQOUpvaU1vbnpZSkI0VEdZbmZ0TCJ9.eyJpc3MiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwiLCJzdWIiOiJkaWQ6ZXhhbXBsZToxMzMzMzMzMzM3IiwidmMiOnsiQGNvbnRleHQiOlsiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvdjEiLHsiQHZvY2FiIjoiaHR0cHM6Ly9vcjEzLmdpdGh1Yi5pby9lbmRvciMifSwiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvdjEiXSwiaWQiOiJ1cm46dXVpZDpkYTYyMWFmZi01MWE3LTQwYjYtYjI4Yi1lZWQyYTU1NzliMGIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImlzc3VlciI6ImRpZDprZXk6elEzc2hybkNacTNSN3ZMdkRlV1FGbnh6NUhNS3FQOUpvaU1vbnpZSkI0VEdZbmZ0TCIsImlzc3VhbmNlRGF0ZSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6ZXhhbXBsZToxMzMzMzMzMzM3IiwiY29vbC1oYXNoIjoiMmNmMjRkYmE1ZmIwYTMwZTI2ZTgzYjJhYzViOWUyOWUxYjE2MWU1YzFmYTc0MjVlNzMwNDMzNjI5MzhiOTgyNCJ9fSwianRpIjoidXJuOnV1aWQ6ZGE2MjFhZmYtNTFhNy00MGI2LWIyOGItZWVkMmE1NTc5YjBiIiwibmJmIjoxMjYyMzczODA0fQ.-RH5e1HEsg_dwa_kcZfyVPgaqYubOvINmdry81ogOtJxpQSwaknpsv9GCLr_Bg931re83oTC5kISfz3SOEEq4w)
+
+Everything after `https://api.did.actor/v/` is a JWT.
+
+You can use this as your `claim.json`
 
 ### Review a claim
 
