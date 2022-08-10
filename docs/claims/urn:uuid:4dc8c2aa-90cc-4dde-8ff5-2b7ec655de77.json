@@ -1,0 +1,36 @@
+{
+  "id": "https://or13.github.io/endor/claims/urn:uuid:4dc8c2aa-90cc-4dde-8ff5-2b7ec655de77.json",
+  "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+  "verify": "https://api.did.actor/v/eyJhbGciOiJFUzI1NksiLCJraWQiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwjelEzc2hybkNacTNSN3ZMdkRlV1FGbnh6NUhNS3FQOUpvaU1vbnpZSkI0VEdZbmZ0TCJ9.eyJpc3MiOiJkaWQ6a2V5OnpRM3Nocm5DWnEzUjd2THZEZVdRRm54ejVITUtxUDlKb2lNb256WUpCNFRHWW5mdEwiLCJzdWIiOiJkaWQ6ZXhhbXBsZToxMzMzMzMzMzM3IiwidmMiOnsiQGNvbnRleHQiOlsiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvdjEiLHsiQHZvY2FiIjoiaHR0cHM6Ly9vcjEzLmdpdGh1Yi5pby9lbmRvciMifSwiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvdjEiXSwiaWQiOiJ1cm46dXVpZDpkYTYyMWFmZi01MWE3LTQwYjYtYjI4Yi1lZWQyYTU1NzliMGIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImlzc3VlciI6ImRpZDprZXk6elEzc2hybkNacTNSN3ZMdkRlV1FGbnh6NUhNS3FQOUpvaU1vbnpZSkI0VEdZbmZ0TCIsImlzc3VhbmNlRGF0ZSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6ZXhhbXBsZToxMzMzMzMzMzM3IiwiY29vbC1oYXNoIjoiMmNmMjRkYmE1ZmIwYTMwZTI2ZTgzYjJhYzViOWUyOWUxYjE2MWU1YzFmYTc0MjVlNzMwNDMzNjI5MzhiOTgyNCJ9fSwianRpIjoidXJuOnV1aWQ6ZGE2MjFhZmYtNTFhNy00MGI2LWIyOGItZWVkMmE1NTc5YjBiIiwibmJmIjoxMjYyMzczODA0fQ.-RH5e1HEsg_dwa_kcZfyVPgaqYubOvINmdry81ogOtJxpQSwaknpsv9GCLr_Bg931re83oTC5kISfz3SOEEq4w",
+  "decoded": {
+    "header": {
+      "alg": "ES256K",
+      "kid": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL#zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL"
+    },
+    "payload": {
+      "iss": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+      "sub": "did:example:1333333337",
+      "vc": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          {
+            "@vocab": "https://or13.github.io/endor#"
+          },
+          "https://www.w3.org/2018/credentials/v1"
+        ],
+        "id": "urn:uuid:da621aff-51a7-40b6-b28b-eed2a5579b0b",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:zQ3shrnCZq3R7vLvDeWQFnxz5HMKqP9JoiMonzYJB4TGYnftL",
+        "issuanceDate": "2010-01-01T19:23:24Z",
+        "credentialSubject": {
+          "id": "did:example:1333333337",
+          "cool-hash": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+        }
+      },
+      "jti": "urn:uuid:da621aff-51a7-40b6-b28b-eed2a5579b0b",
+      "nbf": 1262373804
+    }
+  }
+}
